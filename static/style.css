@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&display=swap");
+:root {
+  --text-primary: white;
+  --text-secondary: black;
+  --bg-primary: rgb(240, 240, 240);
+  --bg-secondary: white;
+}
+body {
+  background: linear-gradient(
+      90deg,
+      rgba(154, 195, 16, 0.9) 0%,
+      rgba(255, 0, 0, 0.8) 100%
+    ),
+    url("https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+}
+.app {
+  margin-top: 3vh;
+  color: var(--test-secondary);
+}
+.gray-it {
+  background: var(--bg-primary);
+}
+.card-header h2 {
+  text-align: center;
+  font-family: "Aldrich", sans-serif;
+  font-weight: bold;
+  padding-top: 0.5rem;
+}
+.start {
+  margin: auto;
+  width: 500px;
+}
+.error-it {
+  color: red;
+  font-size: 1.1rem;
+}
+.final {
+  font-size: 1.3rem;
+  font-family: "Aldrich", sans-serif;
+  font-weight: bold;
+  color: green;
+}
+.end {
+  text-align: center;
+}
+.card-footer h4 {
+  text-align: center;
+}
+.card-footer h4 a {
+  text-decoration: none;
+}
+.card-footer h4 .special{
+  font-family: 'Aldrich', sans-serif;
+}
+#calc {
+  margin-top: 1.5rem;
+}
+#edit {
+  margin-top: 0.3rem;
+}
+#edit-button{
+  color: white;
+}
+form {
+  text-align: center;
+}

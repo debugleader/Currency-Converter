@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='style.css') }}"
+    />
+    <title>Change rates</title>
+  </head>
+  <body>
+    <div class="container animate__animated animate__fadeInUp">
+      <div class="card app">
+        <div class="card-header gray-it">
+          <h2>Currency Converter App</h2>
+        </div>
+        <div class="card-body">
+          <div class="start">
+            <form action="" method="post" style="text-align: center">
+              {{ form.hidden_tag() }}
+              <div class="form-group animate__animated animate__fadeInUp">
+                Select A Currency {{ form.curr(class="form-control") }}
+              </div>
+              <div class="form-group animate__animated animate__fadeInUp animate__delay-1s">
+                {{ form.value.label }} {{ form.value(class="form-control") }} {%
+                for error in form.value.errors %}
+                <span class="error-it">{{ error }}</span>
+                {% endfor %}
+              </div>
+              <div class="form-group animate__animated animate__fadeInUp animate__delay-2s" id="calc">
+                {{ form.submit(class="form-control btn btn-primary") }}
+              </div>
+              <div class="form-group" id="edit">
+                <a
+                  class="form-control btn btn-danger animate__animated animate__fadeInUp animate__delay-3s"
+                  id="edit-button"
+                  href="{{ url_for('convert')}}"
+                  >Go Back To The Main Application</a
+                >
+              </div>
+            </form>
+          </div>
+          <div class="end">
+            {% with messages = get_flashed_messages() %} {% if messages %}
+            <span class="final">{{ messages[0] }}</span>
+            {% endif %} {% endwith %}
+          </div>
+        </div>
+        <div class="card-footer">
+          <h4>
+            <span class='special'> Made By: </span>
+            <a href="https://debugleader.github.io/" target="_blank">Abdallah al khassaky</a>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
