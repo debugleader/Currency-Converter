@@ -1,6 +1,5 @@
 # Currency-converter
 Currency converter that uses a basisc API and uses Redis as a database. This project is built with python, more specifically Flask.
-![Currency-converter](https://ibb.co/ZxsPzyt)
 # How can I run it?
 * Clone the repository.
 * pip install -r requirements.txt
