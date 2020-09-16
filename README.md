@@ -1,5 +1,5 @@
 # Currency-converter
-The application uses a basic API and uses Redis as a database. This project is built with python, more specifically Flask.
+> The application uses a basic API and uses Redis as a database. This project is built with python, more specifically Flask.
 # How can I run it?
 ```
 Clone the repository.
