@@ -19,4 +19,6 @@ Hope you enjoy it.
 
 ---
 
-[![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://github.com/debugleader/Currency-Converter)
+> [![forthebadge](https://forthebadge.com/images/badges/powered-by-black-magic.svg)](https://github.com/debugleader/Currency-Converter)
+
+---
