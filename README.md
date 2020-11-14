@@ -23,6 +23,6 @@ Hope you enjoy it.
 
 ---
 
-> [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://debugleader.github.il)
+> [![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://debugleader.github.io)
 
 ---
